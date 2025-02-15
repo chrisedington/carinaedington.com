@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, Linkedin, Phone } from "lucide-react"
 
@@ -60,7 +59,6 @@ export default function Contact() {
           direction to established firms aiming for financial optimization, I offer tailored solutions to help you
           achieve your objectives.
         </p>
-        <Button size="lg">Book Your Complimentary Consultation</Button>
       </section>
     </div>
   )
