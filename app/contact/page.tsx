@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Mail, Linkedin, Phone } from "lucide-react"
 
 export default function Contact() {
@@ -15,39 +13,7 @@ export default function Contact() {
         </p>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card>
-          <CardHeader>
-            <CardTitle>Send a Message</CardTitle>
-            <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form className="space-y-4">
-              <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-medium">
-                  Name
-                </label>
-                <Input id="name" name="name" required />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium">
-                  Email
-                </label>
-                <Input type="email" id="email" name="email" required />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">
-                  Message
-                </label>
-                <Textarea id="message" name="message" rows={4} required />
-              </div>
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
-
+      <div className="w-full">
         <Card>
           <CardHeader>
             <CardTitle>Contact Information</CardTitle>
@@ -56,7 +22,12 @@ export default function Contact() {
           <CardContent className="space-y-4">
             <div className="flex items-center space-x-2">
               <Mail className="w-5 h-5" />
-              <span>hello@carinaedington.com</span>
+              <a
+                href="mailto:hello@carinaedington.com"
+                className="underline hover:text-primary"
+              >
+                hello@carinaedington.com
+              </a>
             </div>
             <div className="flex items-center space-x-2">
               <Linkedin className="w-5 h-5" />
@@ -64,14 +35,19 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/carina-edington-713ab912b/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="underline hover:text-primary"
               >
                 Carina Edington's LinkedIn Profile
               </a>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-5 h-5" />
-              <span>+44 7949 060981</span>
+              <a
+                href="tel:+447949060981"
+                className="underline hover:text-primary"
+              >
+                +44 7949 060981
+              </a>
             </div>
           </CardContent>
         </Card>
