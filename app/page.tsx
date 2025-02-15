@@ -72,8 +72,8 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-16 text-center">
-        <h2 className="text-3xl font-serif font-bold mb-4">Ready to Transform Your Financial Strategy?</h2>
-        <p className="text-xl mb-8">Let's collaborate to unlock your business's full potential.</p>
+        <h2 className="text-3xl font-serif font-bold mb-4">Get in Touch to Discuss Your Business Needs</h2>
+        <p className="text-xl mb-8">Let’s connect and explore how I can support your goals.</p>
       </section>
     </div>
   )
