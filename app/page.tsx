@@ -74,11 +74,6 @@ export default function Home() {
       <section className="mt-16 text-center">
         <h2 className="text-3xl font-serif font-bold mb-4">Ready to Transform Your Financial Strategy?</h2>
         <p className="text-xl mb-8">Let's collaborate to unlock your business's full potential.</p>
-        <Button asChild size="lg">
-          <Link href="/contact">
-            Schedule a Consultation <ArrowRight className="ml-2" />
-          </Link>
-        </Button>
       </section>
     </div>
   )
