@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { ArrowRight, BarChart, PieChart, TrendingUp } from "lucide-react"
+import { BarChart, PieChart, TrendingUp } from "lucide-react"
 
 export default function Home() {
   return (
