@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle"
+import { MobileMenu } from "@/components/mobile-menu"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
@@ -27,7 +28,7 @@ export default function RootLayout({
               <a href="/" className="text-2xl font-serif font-bold">
                 Carina Edington
               </a>
-              <ul className="flex space-x-6">
+              <ul className="hidden md:flex space-x-6">
                 <li>
                   <a href="/about" className="hover:underline">
                     About
@@ -54,7 +55,10 @@ export default function RootLayout({
                   </a>
                 </li>
               </ul>
-              <ModeToggle />
+              <div className="flex items-center space-x-4">
+                <ModeToggle />
+                <MobileMenu />
+              </div>
             </nav>
           </header>
           <main className="max-w-6xl mx-auto px-4 py-12">{children}</main>
